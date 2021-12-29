@@ -5,7 +5,8 @@ import {
     StyleSheet, 
     TextInput, 
     Platform,
-    FlatList
+    FlatList,
+    StatusBar
   } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -32,7 +33,7 @@ export function Home(){
       setGrettig('Good Night');
     } 
 
-  }, [mySkills])
+  }, [])
 
   return (
     <View style={styles.container}>
@@ -53,7 +54,7 @@ export function Home(){
 
       <Button onPress={handleAddNewSkill} />
 
-      <Text style={[styles.title, { marginVertical:50 }]}>
+      <Text style={[styles.title, { marginVertical:15 }]}>
         My Skills
       </Text>
 
@@ -73,9 +74,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     backgroundColor: '#121015',
-    paddingHorizontal: 20,
-    paddingVertical:70,
-    paddingHorizontal: 30
+    paddingHorizontal: 25,
+    paddingVertical:25,
   },
 
   title: {
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 18,
     padding: Platform.OS === 'ios' ? 15 : 10,
-    marginTop: 30,
+    marginTop: 15,
     borderRadius: 7
   },
 

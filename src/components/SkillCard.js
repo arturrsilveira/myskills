@@ -18,15 +18,15 @@ export function SkillCard({ skill }){
 const styles =  StyleSheet.create({
     textSkill: {
         color: '#FFF',
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: 'bold',
       }, 
       
       buttonSkill: {
         backgroundColor: '#1F1E25',
-        padding: 15,
-        borderRadius: 50,
+        padding: 5,
+        borderRadius: 7,
         alignItems: 'center',
-        marginVertical: 10
+        marginVertical: 5
       }
 })
